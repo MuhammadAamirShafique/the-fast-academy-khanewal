@@ -49,6 +49,29 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 10px;
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #004d00;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #006600;
+    }
     footer {
       background-color: #004d00;
       color: white;
@@ -86,6 +109,8 @@
     <a href="#11G">11th Girls</a>
     <a href="#12B">12th Boys</a>
     <a href="#12G">12th Girls</a>
+    <a href="#notes">Download Notes</a>
+    <a href="#login">Student Login</a>
   </nav>
 
   <section id="about">
@@ -109,6 +134,23 @@
       <div id="12B">12th Boys</div>
       <div id="12G">12th Girls</div>
     </div>
+  </section>
+
+  <section id="notes">
+    <h2>Download Notes</h2>
+    <p><a href="#" download>Download 9th Class Notes</a></p>
+    <p><a href="#" download>Download 10th Class Notes</a></p>
+    <p><a href="#" download>Download 11th Class Notes</a></p>
+    <p><a href="#" download>Download 12th Class Notes</a></p>
+  </section>
+
+  <section id="login">
+    <h2>Student Login</h2>
+    <form action="#" method="post">
+      <input type="text" placeholder="Student ID" required />
+      <input type="password" placeholder="Password" required />
+      <input type="submit" value="Login" />
+    </form>
   </section>
 
   <section id="contact">
